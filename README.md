@@ -6,7 +6,7 @@
 cd path/to/your/local/directory
 ```
 
-```bash
+```git
 git clone https://github.com/arthurfg/queries-nyc-taxi-data.git
 ```
 
@@ -14,17 +14,17 @@ git clone https://github.com/arthurfg/queries-nyc-taxi-data.git
 poetry install
 ```
 
+```bash
+cd path/to/your/local/directory/taxi_rides_ny
+```
+```shell
+poetry shell
+```
+
 ## Run:
 Welcome to your new dbt project!
 
 ### Using the starter project
-
-```bash
-cd path/to/your/local/directory/taxi_rides_ny
-```
-```bash
-poetry shell
-```
 
 Try running the following commands:
 - dbt run
