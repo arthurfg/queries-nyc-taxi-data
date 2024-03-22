@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 dbt-bigquery = "^1.7.6"
 dbt-core = "^1.7.9"
+elementary-data = {extras = ["bigquery"], version = "^0.14.1"}
 
 
 [build-system]

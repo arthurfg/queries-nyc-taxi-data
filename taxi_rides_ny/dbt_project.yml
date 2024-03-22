@@ -33,3 +33,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   taxi_rides_ny:
       +materialized: table
+  elementary:
+    +schema: "elementary"

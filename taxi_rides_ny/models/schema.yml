@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: test_green_taxi_data
+    columns:
+      - name: vendor_id
+        description: "ID do fornecedor"
+        tests:
+          - unique
+      - name: pickup_datetime
+        description: "Data e hora de retirada"
+        tests:
+          - not_null
+      - name: dropoff_datetime
+        description: "Data e hora de entrega"
+        tests:
+          - not_null
+      - name: store_and_fwd_flag
+        description: "Sinalizador de armazenamento e envio para frente"
+      - name: rate_code
+        description: "Código de taxa"
+        tests:
+          - unique
+      - name: passenger_count
+        description: "Número de passageiros"
+      - name: trip_distance
+        description: "Distância da viagem"
+      - name: fare_amount
+        description: "Valor da tarifa"
+      - name: extra
+        description: "Taxa extra"
+      - name: mta_tax
+        description: "Taxa MTA"
+      - name: tip_amount
+        description: "Valor da gorjeta"
+      - name: tolls_amount
+        description: "Valor dos pedágios"
+      - name: ehail_fee
+        description: "Taxa de reserva via aplicativo"
+      - name: airport_fee
+        description: "Taxa do aeroporto"
+      - name: total_amount
+        description: "Valor total"
+      - name: payment_type
+        description: "Tipo de pagamento"
+      - name: distance_between_service
+        description: "Distância entre serviços"
+      - name: time_between_service
+        description: "Tempo entre serviços"
+      - name: trip_type
+        description: "Tipo de viagem"
+      - name: imp_surcharge
+        description: "Taxa de recarga de combustível"
+      - name: pickup_location_id
+        description: "ID do local de retirada"
+      - name: dropoff_location_id
+        description: "ID do local de entrega"
+      - name: data_file_year
+        description: "Ano do arquivo de dados"
+      - name: data_file_month
+        description: "Mês do arquivo de dados"
