@@ -3,7 +3,8 @@ on:
   # Run the action when a push to the main branch of the repository is made.
   pull_request:
     branches: [ "main", "master" ]
-
+    
+  workflow_dispatch:
 jobs:
   elementary:
     runs-on: ubuntu-latest
@@ -16,6 +17,7 @@ jobs:
         with:
           warehouse-type: bigquery 
           adapter-version: 1.5.6 
+          profiles-yml: ${{ secrets.ELEMENTARY_PROFILES_YML }} 
           edr-command:
             edr report
               --file-path "report.html"
