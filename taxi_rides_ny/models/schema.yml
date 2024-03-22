@@ -23,6 +23,8 @@ models:
           - unique
       - name: passenger_count
         description: "Número de passageiros"
+        tests:
+          - unique        
       - name: trip_distance
         description: "Distância da viagem"
       - name: fare_amount
