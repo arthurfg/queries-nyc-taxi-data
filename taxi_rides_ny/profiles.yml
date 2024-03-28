@@ -14,8 +14,9 @@ taxi_rides_ny:
   target: dev
 
 elementary:
+  target: dev
   outputs:
-    default:
+    dev:
       type: bigquery
       project: arthur-data-engineering-course
       dataset: trips_data_all_elementary
