@@ -3,7 +3,6 @@ on:
   # Run the action when a push to the main branch of the repository is made.
   pull_request:
     branches: [ "main", "master" ]
-    
   workflow_dispatch:
 jobs:
   elementary:
