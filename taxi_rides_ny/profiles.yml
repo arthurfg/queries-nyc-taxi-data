@@ -16,9 +16,9 @@ taxi_rides_ny:
 elementary:
   outputs:
     default:
-      type: "bigquery"
-      project: "arthur-data-engineering-course"
-      dataset: "trips_data_all_elementary"
-      method: "service-account"
-      keyfile: /Users/apple/.creds/dbt-user-creds.json
+      type: bigquery
+      project: arthur-data-engineering-course
+      dataset: trips_data_all_elementary
+      method: service-account
+      keyfile: /tmp/bigquery_keyfile.json
       threads: 4
