@@ -11,9 +11,8 @@ jobs:
     steps:
       - name: Checkout dbt project
         uses: actions/checkout@v3
-      - name: Echo
-        run: |
-          echo  ${{ secrets.ELEMENTARY_PROFILES_YML }}   
+      - name: Imprimir valor da secret
+        run: echo "O valor da minha secret é ${{ secrets.ELEMENTARY_PROFILES_YML }}"
       - name: Run Elementary
         uses: elementary-data/run-elementary-action@v1.11
         with:
